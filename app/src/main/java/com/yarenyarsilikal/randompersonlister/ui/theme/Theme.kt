@@ -5,27 +5,24 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
-
-private val DarkColorPalette = darkColors(
-    primary = Purple200,
-    primaryVariant = Purple700,
-    secondary = Teal200
-)
+import androidx.compose.ui.graphics.Color
 
 private val LightColorPalette = lightColors(
-    primary = Purple500,
-    primaryVariant = Purple700,
-    secondary = Teal200
-
-    /* Other default colors to override
-    background = Color.White,
-    surface = Color.White,
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
+    primary = color100,
+    primaryVariant = color200,
+    onPrimary = color500,
+    secondary = color300,
+    secondaryVariant = color400,
+    onSecondary = Color.White
 )
+
+private val DarkColorPalette = darkColors(
+    primary = color600,
+    secondary = color700,
+    onSecondary = color800,
+    surface = color900
+)
+
 
 @Composable
 fun RandomPersonListerTheme(
