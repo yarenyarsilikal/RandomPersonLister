@@ -1,5 +1,6 @@
 package com.yarenyarsilikal.randompersonlister.ui.main
 
+import com.yarenyarsilikal.randompersonlister.domain.model.People
 import com.yarenyarsilikal.randompersonlister.domain.model.Person
 
 
@@ -8,7 +9,6 @@ import com.yarenyarsilikal.randompersonlister.domain.model.Person
  */
 data class PeopleListState(
     val isLoading: Boolean = false,
-    val people: List<Person> = emptyList(),
+    val success : People? = null,
     val error: String = "",
-    val emptyListPlaceHolder : String = ""
 )

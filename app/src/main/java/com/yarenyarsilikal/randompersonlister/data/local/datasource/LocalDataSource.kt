@@ -5,6 +5,7 @@ import android.os.Looper
 import com.yarenyarsilikal.randompersonlister.data.local.model.*
 import com.yarenyarsilikal.randompersonlister.utils.PeopleGen
 import com.yarenyarsilikal.randompersonlister.utils.RandomUtils
+import kotlinx.coroutines.delay
 import javax.inject.Singleton
 import kotlin.math.min
 

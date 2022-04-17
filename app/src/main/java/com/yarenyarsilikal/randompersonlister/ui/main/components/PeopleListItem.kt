@@ -2,22 +2,22 @@ package com.yarenyarsilikal.randompersonlister.ui.main.components
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.yarenyarsilikal.randompersonlister.domain.model.Person
+import com.yarenyarsilikal.randompersonlister.ui.theme.Shapes
 
 
 /**
@@ -31,7 +31,8 @@ fun PeopleListItem(
     Card(
         modifier = Modifier.padding(vertical = 8.dp, horizontal = 8.dp),
         elevation = 16.dp,
-        border = BorderStroke(2.dp, Color.Cyan),
+        border = BorderStroke(2.dp, MaterialTheme.colors.onPrimary),
+        shape = RoundedCornerShape(topStart = 8.dp, topEnd = 16.dp, bottomStart = 16.dp, bottomEnd = 8.dp)
     ) {
         Row(
             modifier = Modifier
@@ -42,7 +43,7 @@ fun PeopleListItem(
             Text(
                 text = "${person.id}",
                 modifier = Modifier
-                    .background(Color.Cyan, CircleShape)
+                    .background(MaterialTheme.colors.primary, CircleShape)
                     .width(64.dp),
                 style = MaterialTheme.typography.body1,
                 textAlign = TextAlign.Center

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">RandomPersonLister</string>
+
+    <string name="generic_error_message">An unexpected error occurred. Try again!</string>
+    <string name="try_again_button_label">Try again</string>
+
 </resources>
