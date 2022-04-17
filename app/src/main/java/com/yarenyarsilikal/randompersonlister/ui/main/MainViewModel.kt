@@ -2,13 +2,14 @@ package com.yarenyarsilikal.randompersonlister.ui.main
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.paging.*
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.PagingData
+import androidx.paging.cachedIn
 import com.yarenyarsilikal.randompersonlister.domain.model.Person
 import com.yarenyarsilikal.randompersonlister.domain.usecase.GetPeopleUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.filter
-import kotlinx.coroutines.flow.map
 import javax.inject.Inject
 
 /**

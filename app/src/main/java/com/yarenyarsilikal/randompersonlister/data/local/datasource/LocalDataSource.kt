@@ -39,7 +39,7 @@ class LocalDataSource {
     }
 
 
-    public fun fetch(next: String?, completionHandler: FetchCompletionHandler) {
+    fun fetch(next: String?, completionHandler: FetchCompletionHandler) {
         val processResult = processRequest(next)
 
         Handler(Looper.getMainLooper()).postDelayed({
