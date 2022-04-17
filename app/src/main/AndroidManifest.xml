@@ -3,6 +3,7 @@
     package="com.yarenyarsilikal.randompersonlister">
 
     <application
+        android:name=".application.RandomPersonListerApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,9 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RandomPersonLister">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.RandomPersonLister">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
